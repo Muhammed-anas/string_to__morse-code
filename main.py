@@ -16,16 +16,5 @@ string = input("Enter the strings: ").lower()
 print(f"The string are you entered is {string}")
 print(f"The morse code is: ")
 
-word = [letter for letter in string]
-
-for let in word:
-    if let in string:
-        index = strings.index(let)
-        result = morse_code[index]
-        print(result, end="")
-
-# for let in word:
-#     if let in string:
-#         index = strings.index(let)
-#         result = morse_code[index]
-#         print(result, end="")
+results = [morse_code[strings.index(let)] for let in string if let in string]
+print(results, end="")
